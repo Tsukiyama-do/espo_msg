@@ -24,7 +24,7 @@ Http.onreadystatechange = () => {
     //        console.log(strwk.substring(yam_position - 2,yam_position - 1 )) 
         deci = strwk.substring(yam_position - 2,yam_position - 1 )
         dvalue = "Espo : " + strwk.substring(yam_position - 6,yam_position - 1 )
-        (deci === '*') ? awsSes(dvalue) && console.log("Espo occured.")  : console.log("NoEspo")
+        deci === '*' ? awsSes(dvalue) && console.log("Espo occured.")  : console.log("NoEspo")
           
     }
 
