@@ -26,7 +26,7 @@ Http.onreadystatechange = () => {
         deci = strwk.substring(yam_position - 2,yam_position - 1 )
         dvalue = "Espo : " + strwk.substring(yam_position - 6,yam_position - 1 )
         rst = awsSes(dvalue)
-        deci === '*' ? console.log(rst) : console.log("NoEspo")
+        deci === '*' ? console.log("Espo exist in success") : console.log("NoEspo")
     }
 
 }
