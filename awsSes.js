@@ -46,15 +46,16 @@ const awsSes =  ( msg ) => {
         
     // const command = new CloneReceiptRuleSetCommand(params);
             
-            
+      const msg_success = "Message is sent in success";      
+      const msg_error = "Error occurred in sending the message.";      
       const run = async () => {
         try {
           const data = await client.send(new SendEmailCommand(params));
 //          console.log("Success", data);
-          return "Message is sent in success"  ;
+          return msg_success  ;
         } catch (err) {
 //          console.log("Error", err);
-          return "Error occurred in sending the message." ;
+          return msg_error ;
 }
       };
       run();
