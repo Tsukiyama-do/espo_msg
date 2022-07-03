@@ -21,10 +21,12 @@ Http.onreadystatechange = () => {
       const strwk = Http.responseText 
       const kok_position = strwk.indexOf('Kok') 
       const yam_position = strwk.indexOf('Yam') 
+      let rst = "";
     //        console.log(strwk.substring(yam_position - 2,yam_position - 1 )) 
         deci = strwk.substring(yam_position - 2,yam_position - 1 )
         dvalue = "Espo : " + strwk.substring(yam_position - 6,yam_position - 1 )
-        deci === '*' ? console.log(awsSes(dvalue )) : console.log("NoEspo")
+        rst = awsSes(dvalue)
+        deci === '*' ? console.log(rst) : console.log("NoEspo")
     }
 
 }
