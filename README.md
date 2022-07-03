@@ -1,2 +1,1 @@
-# espo_msg
-espo notice message system
+#espo_msg
