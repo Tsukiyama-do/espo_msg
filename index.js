@@ -9,7 +9,7 @@ const url = "https://wdc.nict.go.jp/ISDJ/ionospheric-signal-i.html";
 Http.open("GET", url);
 Http.send();
 
-
+ 
 let deci = '';
 let dvalue = '';
 // Http.onreadystatechange = () => console.log(Http.responseText)
