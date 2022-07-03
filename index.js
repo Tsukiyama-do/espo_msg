@@ -21,12 +21,11 @@ Http.onreadystatechange = () => {
       const strwk = Http.responseText 
       const kok_position = strwk.indexOf('Kok') 
       const yam_position = strwk.indexOf('Yam') 
-      let rst = "";
     //        console.log(strwk.substring(yam_position - 2,yam_position - 1 )) 
         deci = strwk.substring(yam_position - 2,yam_position - 1 )
         dvalue = "Espo : " + strwk.substring(yam_position - 6,yam_position - 1 )
-        rst = awsSes(dvalue)
-        deci === '*' ? console.log("Espo exist in success") : console.log("NoEspo")
+        (deci === '*') ? awsSes(dvalue) && console.log("Espo occured.")  : console.log("NoEspo")
+          
     }
 
 }
