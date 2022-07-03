@@ -44,7 +44,7 @@ const awsSes =  ( msg ) => {
         ],  
       };
         
-        // const command = new CloneReceiptRuleSetCommand(params);
+    // const command = new CloneReceiptRuleSetCommand(params);
             
             
       const run = async () => {
